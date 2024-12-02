@@ -1,35 +1,36 @@
 # Proyecto_2
 Realizar análisis exploratorios de datos (EDA) inicial para al menos cuatro conjuntos de datos, diagnosticar y elegir una problemática específica para abordar (regresión, clasificación, clusterización, predicción). 
 
+1. Encuesta de Uso de Tabaco Juvenil (YTS)
+Ventajas: Tiene datos de comportamiento y demografía. Podría usarse para predecir si alguien usa tabaco (clasificación) o el nivel de consumo (regresión).
+Problemas:
+Si hay pocos usuarios de tabaco, puede ser difícil entrenar un modelo.
+Podría haber datos incompletos.
+Los datos muestran correlaciones, pero no necesariamente causas
 
-DataSet 1: https://www.kaggle.com/datasets/mikhail1681/youth-tobacco-survey-yts-data-usa
-DataSet 2:
-DataSet 3:
-DataSet 4:
+3. Calificaciones de Calidad de Aerolíneas
+Ventajas: Tiene datos numéricos y categóricos que podrían servir para predecir calificaciones (regresión) o clasificar si la calidad es alta o baja (clasificación).
+Problemas:
+Las calificaciones pueden ser subjetivas o tener sesgos.
+Algunas aerolíneas o años podrían tener pocos datos.
+Factores externos, como el clima, no siempre están incluidos.
 
+5. Ventas de Walmart
+Ventajas: Los datos tienen variables como ventas, precios de combustible, y días festivos, ideales para hacer predicciones de ventas. Es útil para modelos de series temporales (como predecir ventas semanales).
+Problemas:
+Hay que manejar la estacionalidad y los efectos de los días festivos.
+Puede haber datos faltantes.
+Algunas variables podrían estar relacionadas (multicolinealidad), lo que complica el modelo.
 
-Tecnicas utilizadas:
+7. Datos de COVID-19 en Condados de EE.UU.
+Ventajas: Incluye datos geográficos y temporales. Puede usarse para predecir casos o muertes (regresión) o encontrar patrones en los condados (agrupamiento).
+Problemas:
+Puede haber datos incompletos o erróneos en los códigos de condados (fips).
+Algunos condados tienen pocos casos, mientras que otros tienen muchos.
+Factores externos (como políticas de estado o vacunas) no siempre están en el conjunto de datos.
 
-Modelos de Clasificación:
-
-KNN (K-Nearest Neighbors)
-RandomForest (Random Forest)
-Regresión Logística (Logistic Regression)
-Selección de Hiperparámetros:
-
-Validación Cruzada (Cross-Validation): Utilizada para seleccionar los mejores hiperparámetros de los modelos.
-
-Evaluación de Modelos:
-
-Métricas de Rendimiento:
-Exactitud (Accuracy)
-Precisión (Precision)
-Recall (Recall)
-Puntuación F1 (F1-Score)
-Matriz de Confusión (Confusion Matrix): Para evaluar la precisión de la clasificación de los modelos.
-Informe de Clasificación (Classification Report): Generado para cada modelo, que incluye las métricas de rendimiento.
-Curva ROC (Receiver Operating Characteristic Curve) y AUC (Área bajo la Curva ROC): Se visualiza y se calcula para el mejor modelo para evaluar su capacidad de discriminación.
-
+Mejor Opción: Ventas de Walmart
+Por qué: Es un conjunto de datos bien estructurado, con tareas claras para resolver (como predecir ventas). Además, es útil para aplicaciones prácticas en el mundo real.
 
 Como ejecitar este notebook
 Crear tu entorno virtual (si no deseas trabajar localmente):
